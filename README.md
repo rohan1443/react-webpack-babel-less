@@ -44,6 +44,26 @@ npm run build
 
 Below configuration and settings are optional
 
+
+
+
+### Definitions To Know 
+
+#### babel plugin transform decorators legacy :- compile class and object decorators to ES5
+
+#### babel plugin transform class properties :- This plugin transforms static class properties as well as properties declared with the property initializer syntax
+
+#### babel plugin transform runtime :- Externalise references to helpers and builtins, automatically polyfilling your code without polluting globals
+
+#### babel-runtime :- self contained runtime
+
+### css-loader :- 
+Example - 
+var css = require("css-loader!./file.css");
+// => returns css code from file.css, resolves imports and url(...) 
+(can use require(...) for loading the css file via lazy loading instead of using import or url(...))
+
+
 ### Nginx Config
 
 Here is an example Nginx config:
@@ -85,25 +105,10 @@ To do the actual linting, run:
 npm run lint
 ```
 
+
 ### Notes on importing css styles
 * styles having /src/ in their absolute path are considered part of the application and exported as local css modules.
 * other styles are considered global styles used by many components and are included in the css bundle directly.
 
 ### Contribute
 Please contribute to the project if you know how to make it better, including this README :)
-
-
-Definitions :
-babel plugin transform decorators legacy :- compile class and object decorators to ES5
-
-babel plugin transform class properties :- This plugin transforms static class properties as well as properties declared with the property initializer syntax
-
-babel plugin transform runtime :- Externalise references to helpers and builtins, automatically polyfilling your code without polluting globals
-
-babel-runtime :- self contained runtime
-
-css-loader :- 
-Example - 
-var css = require("css-loader!./file.css");
-// => returns css code from file.css, resolves imports and url(...) 
-(can use require(...) for loading the css file via lazy loading instead of using import or url(...))
