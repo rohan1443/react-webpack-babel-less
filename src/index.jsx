@@ -1,6 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
+import Bootstrap from 'bootstrap/dist/css/bootstrap.css';
 import App from './jsx/components/app.jsx';
 
 render( <AppContainer><App/></AppContainer>, document.querySelector("#app"));
