@@ -13,7 +13,7 @@
     "url": "https://github.com/rohan1443/react-webpack-babel-less.git"
   },
   "author": "Rohan Mazumdar",
-  "license": "RM",
+  "license": "",
   "homepage": "https://github.com/rohan1443/react-webpack-babel-less/blob/master/README.md",
   "dependencies": {
     "less": "^2.7.1",
@@ -38,6 +38,7 @@
     "less": "^2.7.1",
     "less-loader": "^2.2.3",
     "postcss-loader": "^1.2.0",
+    "react-dom": "^15.4.1",
     "react-hot-loader": "^3.0.0-beta.6",
     "style-loader": "0.13.1",
     "url-loader": "0.5.7",
