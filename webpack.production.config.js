@@ -15,9 +15,9 @@ loaders.push({
 
 // local scss modules
 loaders.push({
-	test: /[\/\\]src[\/\\].*\.scss/,
+	test: /[\/\\]src[\/\\].*\.less/,
 	exclude: /(node_modules|bower_components|public\/)/,
-	loader: ExtractTextPlugin.extract('style', 'css?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss!sass')
+	loader: ExtractTextPlugin.extract('style', 'css?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss!less')
 });
 // global css files
 loaders.push({
